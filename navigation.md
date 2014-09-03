@@ -1,11 +1,13 @@
+[gimmick:theme](united)
 # sunriseJS
 
 [Home](home.md)
-[About](about.md)
+[About us](about.md)
 [Download](download.md)
 [Docs]()
 
   * # Getting started
+  * [how to sunriseJS](howtosunrise.md)
   * [Basic Strukture](basicStrukture.md)
   * [Basic Commands](basicCommands.md)
   * [Basic -set title here-]()

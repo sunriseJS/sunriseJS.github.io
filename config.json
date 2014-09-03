@@ -3,5 +3,6 @@
     "lineBreaks": "gfm",
     "additionalFooterText": "",
     "anchorCharacter": "&#x2693;",
-    "title": "sunriseJS - a damn cool javascript game engine"
+    "title": "sunriseJS - a damn cool javascript game engine",
+    "theme": "lumen"
 }

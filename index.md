@@ -1,10 +1,15 @@
 Heading
 =======
 
-SubHeading
-----------
+Heading
+=======
 
-  * list item 1
-  * list item 2
+Section 1
+---------
 
-  This is a hyperlink to [Google](http://google.com).
+[...]
+
+Section 2
+---------
+
+[...]
