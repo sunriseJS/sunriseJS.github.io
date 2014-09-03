@@ -5,9 +5,10 @@
 [Download](download.md)
 [Docs]()
 
-  * # SubMenu Heading 1
-  * [SubMenu Item 1](subitem1.md)
-  * [SubMenu Item 2](subitem2.md)
+  * # Getting started
+  * [Basic Strukture](basicStrukture.md)
+  * [Basic Commands](basicCommands.md)
+  * [Basic -set title here-]()
   - - - -
   * # SubMenu Heading 2
   * [SubMenu Item 3](subitem3.md)
