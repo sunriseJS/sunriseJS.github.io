@@ -4,5 +4,4 @@ About sunriseJS
 about us
 ---------
 
-We are two exchange stundets who are on there semester aboad in finland. 
-to be continued...
+We are two computer science stundents and developed SunlightJS during our semester abroad in Finland. 
