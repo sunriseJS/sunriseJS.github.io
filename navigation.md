@@ -1,7 +1,7 @@
 [gimmick:theme](united)
 # sunriseJS
 
-[Home](home.md)
+[Home](index.md)
 [About us](about.md)
 [Download](download.md)
 [Docs]()

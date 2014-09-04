@@ -9,6 +9,8 @@ Getting startetd
 We will provide a stable build here, that can just be downloaded and [used](howtosunrise.md) 
 
 
-Beta builds
+Bind sunriseJS to the HTML
 ---------
-* [GitHub](https://github.com/sunriseJS/sunriseJS)
+```
+<div id="example" sunriseJS-app="my example app"></div>
+```
