@@ -4,7 +4,7 @@ introducing sunriseJS
 
 What is sunriseJS
 ---------
-SunriseJS is a simple to use 2D Javascript game engine that works in every browser. Even game creators that are new to programming will find it easy to be creative! 
+SunriseJS is a simple to use 2D Javascript game engine that works in every modern browser. Even game creators that are new to programming will find it easy to be creative! 
 
 just another engine?
 ---------
