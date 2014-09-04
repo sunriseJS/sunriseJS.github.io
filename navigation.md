@@ -1,5 +1,5 @@
 [gimmick:theme](united)
-[![](http://placekitten.com/g/20/20)sunriseJS](#!index.md)
+[sunriseJS](#!index.md)
 
 [Home](index.md)
 [About us](about.md)
