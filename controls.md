@@ -4,7 +4,7 @@ Controls
 
 Getting startetd
 ---------
-SunriseJS provides a very easy way of binding controls to actions. You are able to bind functions on ```keyup```and ```keydown``` event or just ask whether a key is pressed or not. 
+SunriseJS provides a very easy way of binding controls to actions. You are able to bind functions on ```keyup``` and ```keydown``` events or just find out whether a key is pressed or not. 
 Lets start easy.
 
 Is a key pressed?
