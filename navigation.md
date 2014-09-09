@@ -8,4 +8,4 @@
 
   * # Getting started
   * [how to sunriseJS](howtosunrise.md)
-  * [advanced commands](advanced.md)
+  * [controls](controls.md)
