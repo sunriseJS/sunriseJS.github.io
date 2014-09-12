@@ -25,7 +25,7 @@ and include sunrise JS at the end of the ```body``` tag
 So, what's my part?
 --------
 
-Just grap an new javascript file and define a global variable 
+Just grab an new javascript file and define a global variable 
 
 ```javascript
 var game = {};
