@@ -47,14 +47,14 @@ Maybe you just want a function to be executed when a Player presses or releases 
 
 Excample ```key down```:
 ```javascript 
-sr.controls.onKeyDown('a',funtion(){
+sr.controls.onKeyDown('a',function(){
 	// will be executed if the player hits 'a'
 });
 ```
 
 Excample ```key up```:
 ```javascript 
-sr.controls.onKeyUp('a',funtion(){
+sr.controls.onKeyUp('a',function(){
 	// will be executed if the player releases 'a'
 });
 ```
@@ -68,7 +68,7 @@ It's the same syntax like [isKeyPressed](#Is_a_key_pressed?)
 
 Excample multi```key down```:
 ```javascript 
-sr.controls.onKeyDown('a','b',funtion(){
+sr.controls.onKeyDown('a','b',function(){
 	// 'a' and 'b' will execute the same funktion 'onKeyDown'
 });
 ```
@@ -76,9 +76,9 @@ sr.controls.onKeyDown('a','b',funtion(){
 It's even possible to do something like this:
 
 ```javascript 
-sr.controls.onKeyDown('a',funtion(){
+sr.controls.onKeyDown('a',function(){
 	// This function is excecuted if 'a' is pressed
-},'b',funtion(){
+},'b',function(){
 	// This function is excecuted if 'b' is pressed
 });
 ```
@@ -91,7 +91,7 @@ var myFirstFunction = fucntion(){
 	console.log('executet on a');
 };
 
-var mySecountFunction = function(){
+var mySecontFunction = function(){
 	console.log('executed on b or c');
 }
 ```
