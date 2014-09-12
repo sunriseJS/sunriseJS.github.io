@@ -66,12 +66,43 @@ sr.controls.onKeyUp('a',funtion(){
 ### Excample of binding functions to several keys
 It's the same syntax like [isKeyPressed](#Is_a_key_pressed?)
 
-Excample ```key down```:
+Excample multi```key down```:
 ```javascript 
 sr.controls.onKeyDown('a','b',funtion(){
-	// will be executed if the player hits 'a' and 'b' at the same time'
+	// 'a' and 'b' will execute the same funktion 'onKeyDown'
 });
 ```
+
+It's even possible to do something like this:
+
+```javascript 
+sr.controls.onKeyDown('a',funtion(){
+	// This function is excecuted if 'a' is pressed
+},'b',funtion(){
+	// This function is excecuted if 'b' is pressed
+});
+```
+
+This is cool because you are able to define functiones anywhere in your script and you assign them at one place. That makes your script much clearer and easer to maintain!
+
+So first we define some functions:
+```javascript 
+var myFirstFunction = fucntion(){
+	console.log('executet on a');
+};
+
+var mySecountFunction = function(){
+	console.log('executed on b or c');
+}
+```
+And now you just have to assign the functions to the key, It's easy like this:
+
+```javascript 
+sr.controls.onKeyDown('a',myFirstFunction,'b','c',mySecountFunction);
+```
+
+That's it!
+*****
 
 
 
