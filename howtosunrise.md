@@ -16,7 +16,7 @@ and include sunrise JS at the end of the ```body``` tag
 ```
 <body>
 	<!-- other html stuff -->
-	<script src="sunrise.js" type="text/javascript" async defer></script>
+	<script src="sunrise.js" type="text/javascript"></script>
 </body>
 ```
 
