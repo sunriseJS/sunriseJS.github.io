@@ -27,5 +27,6 @@ grunt
 Example
 ---------
 
-We will provide a simple example game here. Just search for the #example tag in the current releases
+We will provide a simple example game here. Just search for the #example tag in the current releases.
+Or checkout the demo brache.
 
