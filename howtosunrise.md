@@ -30,3 +30,23 @@ Just grab an new javascript file and define a global variable
 ```javascript
 var game = {};
 ```
+
+Okay, sice you got that we can start definig three essential things: ```config``` , ```init``` and ```run```
+
+```javascript
+var game = {
+	config: {
+
+	},
+
+	init: function($scope){
+		// Initialize static content here
+	},
+
+	run: function($scope){
+		// The run function will be called 60 times per second. 
+	},
+};
+```
+
+Maybe you noticed that we pass a variable into the ```init``` and ```run`` function. This is where you store all the runtime necessary stuff. E.g. All game relevant objects that are drawn in every step. 

@@ -4,8 +4,4 @@
 [Home](index.md)
 [About us](about.md)
 [Download](download.md)
-[Docs]()
 
-  * # Getting started
-  * [how to sunriseJS](howtosunrise.md)
-  * [controls](controls.md)
