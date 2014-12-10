@@ -33,10 +33,10 @@ var game = {};
 
 Okay, sice you got that we can start definig three essential things: ```config``` , ```init``` and ```run```
 
-```javascript
+```
 var game = {
 	config: {
-
+		//do config stuff
 	},
 
 	init: function($scope){
@@ -49,4 +49,28 @@ var game = {
 };
 ```
 
-Maybe you noticed that we pass a variable into the ```init``` and ```run`` function. This is where you store all the runtime necessary stuff. E.g. All game relevant objects that are drawn in every step. 
+Maybe you noticed that we pass a variable into the ```init``` and ```run`` function. This is where you store all the runtime necessary stuff.
+
+Its also possible to define own functions. ```$scope```will be passed in every function that are defined within ```game = {}```.
+
+Eg.
+``` 
+var game = {
+	config: {
+		//do config stuff
+	},
+
+	createBots: function ($scope) {
+		// generate bots here
+	},
+
+	init: function($scope){
+		// Initialize static content here
+	},
+
+	run: function($scope){
+		// The run function will be called 60 times per second. 
+	}
+};
+
+```

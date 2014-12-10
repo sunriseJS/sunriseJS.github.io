@@ -1,11 +1,12 @@
+
 Controls
 =======
 
+# Keyboard
 
-Getting startetd
----------
 SunriseJS provides a very easy way of binding controls to actions. You are able to bind functions on ```keyup``` and ```keydown``` events or just find out whether a key is pressed or not. 
 Lets start easy.
+
 
 Is a key pressed?
 ---------
@@ -14,7 +15,7 @@ As already mentioned before, its damn easy to find out!
 
 ******
 
-### Example:
+#### Example:
 ```javascript 
 sr.controls.isKeyPressed('a');
 ```
@@ -22,14 +23,14 @@ Returns true if 'a' is pressed.
 
 *****
 
-### or:
+#### or:
 ```javascript 
 sr.controls.isKeyPressed('a','shift');
 ```
 Returns true if 'a' is pressed together with the shift key.
 
 *****
-### Using keyCodes
+#### Using keyCodes
 You like KeyCodes? Ok, no problem. It's even posible to put in KeyCodes!
 ```javascript 
 sr.controls.isKeyPressed('87','a');
@@ -43,7 +44,7 @@ Maybe you just want a function to be executed when a Player presses or releases 
 
 *****
 
-### Excample of binding functions to a single key
+#### Excample of binding functions to a single key
 
 Excample ```key down```:
 ```javascript 
@@ -63,7 +64,7 @@ sr.controls.onKeyUp('a',function(){
 *****
 
 
-### Excample of binding functions to several keys
+#### Excample of binding functions to several keys
 It's the same syntax like [isKeyPressed](#Is_a_key_pressed?)
 
 Excample multi```key down```:
@@ -104,6 +105,6 @@ sr.controls.onKeyDown('a',myFirstFunction,'b','c',mySecountFunction);
 That's it!
 *****
 
-
-
+# Mouse
+SunriseJS doenst support mouse inputs at the moment.
 
