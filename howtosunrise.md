@@ -31,7 +31,7 @@ Just grab an new javascript file and define a global variable
 var game = {};
 ```
 
-Okay, sice you got that we can start definig three essential things: ```config``` , ```init``` and ```run```
+Okay, sice you got that we can start definig three essential things: [config](gameconfig.md) , ```init``` and ```run```
 
 ```
 var game = {
@@ -60,16 +60,16 @@ var game = {
 		//do config stuff
 	},
 
-	createBots: function ($scope) {
-		// generate bots here
-	},
-
 	init: function($scope){
 		// Initialize static content here
 	},
 
 	run: function($scope){
 		// The run function will be called 60 times per second. 
+	},
+	
+	createBots: function ($scope) {
+		// generate bots here
 	}
 };
 

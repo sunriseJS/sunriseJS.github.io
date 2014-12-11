@@ -4,7 +4,7 @@ Scope functions
 The variable that is passed into the functions that are declared in ```game = {}``` well be named ```scope```here.
 ## Group system
 
-Groups in sunriseJS are mainly used to draw images on the canvas and for the collision detection. Other that that you are wellcome to add new functionlity to anhance the way groups are used.
+Groups in sunriseJS are mainly used to draw images on the canvas and for the collision detection. Other that that you are wellcome to add new functionllity to anhance the way groups are used.
 
 
 
@@ -92,13 +92,28 @@ scope.fn.emit("someEvent");
 *****
 
 ## Sound
-### pauseSound
+Games without sound can't be named games! That's why sunriseJS provides a simple way to play sounds!
 ### playSound
+Let's asume there is a sound loaded with the name 'steps' we can simple call:
+```
+scope.fn.playSound('steps');
+```
 ### isSoundPlaying
+Returns a boolean if a sound is playing. 
+```
+var isPlayingSteps = scope.fn.isSoundPlaying('steps');
+```
+### pauseSound
+pauses a specific sound.
+```
+scope.fn.pauseSound('steps');
+```
 
 ***** 
 
 ## Loading
+All the loading should not be called by yourself. Only do it if you have a real point.
+They are all used in the [game.config](gameconfig.md).
 ### loadImages
 ### loadLevels
 ### loadScript
@@ -107,6 +122,7 @@ scope.fn.emit("someEvent");
 *****
 
 ## Components
+
 ### Component
 
 *****
