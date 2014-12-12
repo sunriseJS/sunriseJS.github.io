@@ -4,7 +4,7 @@ Level Config
 We are serious! We want you to have as less work as you could have designing a level. 
 But since the level editor is not completed yet, you have to do a bit of work here.
 
-Hint: it's not possible to have comments in JSON.
+Hint: It's not possible to have comments in JSON.
 
 
 ## Basics 
@@ -15,12 +15,13 @@ The Level files consist of pure JSON.
 {
     "width" : 2096,
 	"height": 512,
-	//if you give to colors here you get an gradient.
 	"background":{
 		"from":"#9ba8c5",
 		"to":"#e9cea4"
 	}
 }
+
+If you set ```from``` and ```to``` for the background, you will get a gradient.
 ```
 *****
 
@@ -28,9 +29,12 @@ The Level files consist of pure JSON.
 It's possible to define mutliplay layer to draw on. If you are using images here, you can simply put the name 
 All the layer options are:
 
+Hint: The z index is relative to the entity layer. Entities are drawn on an own layer which can not be reached from the level.JSON. Layers with z <= 0 are drawn in front of the entities. Layers with z > 0 are drawn behind.
+
 | Option        | Description	| Values	|
 | :-------------: |:------------| ---------:	|
 | type	      	| Set a time for the layer | image / tiles 	|
+| background	| A background image for the Layer | choose from game.config.images |
 | size-x      	| Discribes what happens if the player reaches the end of the layer in X direction      |   loop / original / stretch 	|
 | size-y 		| Discribes what happens if the player reaches the end of the layer in Y direction      |   loop / original / stretch 	|
 | scroll-x 		| Set scroll speed in X direction     |    unlimeted 	|
@@ -40,7 +44,7 @@ All the layer options are:
 | z 			| Layer z-index. |    0 - unlimeted 	|
 | tiles 		| If type = tiles It's an array where all tiles are setted |    [imgX, imgY, tileX, tileY]  	|
 | group 		| Group where all the tiles are pushed |    group name 	|
-| tileset 		| Name of the tileset |    image name	|
+| tileset 		| Name of the tileset |    choose from game.config.images	|
 
 
 
@@ -53,7 +57,6 @@ All the layer options are:
 		{
 
 			"type": "image",
-			//Use the image name from the game.config
 			"image": "background1",
 			"size-x": "loop",
 			"size-y": "original",
@@ -69,9 +72,14 @@ All the layer options are:
 *****
 
 ## Entity Layer
-All entities are drawn on an own layer.
+You can add entities to your game simply by adding them to the entities array.
 
-Hint: The z index is relative to the entity layer. Entities are drawn on an own layer. Layers with z <= 0 are drawn in front of the entities. Layers with z > 0 are drawn behind.
+| Option          | Description	| Values	|
+| :-------------: |:------------| ---------:|
+| type	      	| Choose of the entityTypes that you have defined in the game.config | entityType 	|
+| x, y	      	| Starting position of the Entity | unlimeted 	|
+| name	      	| If a name is defined, the entity will be saved in ```scope.name``` | unique name 	|
+| components	| You can simply add a component to the entity and set component values | unique name 	|
 
 ```
 { 
@@ -90,9 +98,8 @@ Hint: The z index is relative to the entity layer. Entities are drawn on an own 
 			"type": "elevator",
 			"x": 0,
 			"y": 256,
-			//Simply add components at this point to configure your entiies
 			"components":{
-				"elevator": {
+				"elevatorComp": {
 					"minY": 0,
 					"maxY": 500
 				}
@@ -103,15 +110,8 @@ Hint: The z index is relative to the entity layer. Entities are drawn on an own 
 			"x": 1024,
 			"y": -128,
 			"name": "bot"
-		},
-		{
-			"type": "item",
-			"x": 1344,
-			"y": 64
 		}
 	]
 }
 
 ```
-
-Hint: If a name is defined, the entity will be saved in ```scope.name``

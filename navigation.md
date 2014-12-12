@@ -10,6 +10,7 @@
   * # Getting started
   * [How to sunriseJS](howtosunrise.md)
   * #Configuration
+  * [Components](components.md)
   * [Game config](gameconfig.md)
   * [Level config](levelconfig.md)
   * # User input
