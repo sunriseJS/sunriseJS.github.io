@@ -9,11 +9,10 @@
 
   * # Getting started
   * [How to sunriseJS](howtosunrise.md)
-  * [Handle sprites](handlesprites.md)
   * #Configuration
   * [Game config](gameconfig.md)
   * [Level config](levelconfig.md)
   * # User input
   * [Controls](controls.md)
   * # Public functions
-  * [Scope functions](srfnfunctions.md)
+  * [Public functions](srfnfunctions.md)
